@@ -1,0 +1,163 @@
+/* ==== Base Reset and Body ==== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #000; /* Black text */
+  margin: 0;
+  padding-top: 70px;
+}
+
+/* ==== Navbar ==== */
+.navbar {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+  z-index: 999;
+  position: fixed;
+  height: 50px;
+}
+
+.navbar-brand {
+  color: #000 !important;
+  font-size: 1.4rem;
+}
+
+.navbar-brand:hover {
+  color: #444 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #727272 !important;
+  margin-left: 1rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #000 !important;
+}
+
+.navbar-toggler {
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ==== Hero Section ==== */
+.home-hero {
+  height: 100vh;
+  background: url('../assets/background3.png') center/cover no-repeat;
+  color: white; /* text color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.home-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+  z-index: 0;
+}
+
+.home-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.home-hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.home-hero p {
+  font-size: 1.25rem;
+  color: #eee;
+}
+
+/* ==== General Link Styling ==== */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333;
+}
+
+/* ==== Layout ==== */
+.container {
+  padding: 2rem 0;
+}
+.social-links {
+  margin-top: 20px;
+}
+.social-icon {
+  font-size: 2rem; /* Adjust icon size */
+  margin: 0 15px; /* Add spacing between the icons */
+  color: #fff; /* White color for icons */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-icon:hover {
+  color: #0077b5; /* Change color on hover (LinkedIn blue) */
+}
+
+.social-icon.github:hover {
+  color: #333; /* Change color on hover (GitHub dark) */
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.card-body a.btn {
+  background-color: #e2e2e2;
+  color: #6d6d6d;
+  font-weight: bold;
+  border: none;
+}
+
+.card-body a.btn:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.container .row {
+  row-gap: 2rem;
+}
+.btn-outline-dark {
+  border: 2px solid #000;
+  color: #000;
+  font-weight: lighter;
+}
+
+.btn-outline-dark:hover {
+  background-color: #000;
+  color: #fff;
+}
+.pdf-embed-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
