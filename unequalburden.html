@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leah Bates</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
+
+    <!--put your Bootstrap stylesheet links below this comment and above style.css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Create the navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Leah Bates</a>
+    
+          <!-- Hamburger aligned to right -->
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Collapsible menu -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-end">
+              <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <!--<li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>-->
+            </ul>
+          </div>
+        </div>
+      </nav> 
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="portfolio-title">Unequal Burden: A Mapping Tool for Environmental Justice in Cancer Alley</h2>
+                <p class="portfolio-description">
+                    In GEOG 575: Interactive Cartography & Geovisualization, our final project involved creating an interactive map to help a community leader 
+                    advocate for understanding the cost of the relocation of harmed marginalized populations in Louisiana's Cancer Alley. Using the D3.js library,
+                     I built a dynamic, data-driven map that integrates cancer rates, air quality, refinery locations, and demographic data
+                    to clearly visualizes the disproportionate health impacts of industrial pollution. Through 
+                    collaboration and user-centered design, we built a tool that empowers advocacy by showing the correlation between pollution, health outcomes, 
+                    and housing costs, ultimately helping to secure funding for safer relocation options for at-risk communities.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 portfolio-image">
+                <a href="assets/unequalburden-map.png"><img src="assets/unequalburden-map.png" alt="Colombia Terrain Map" class="center-block img-responsive" width="100%" /></a>
+            </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12 text-center">
+            <a href="https://leahabates.github.io/2025_Final_Project/" target="_blank" class="btn btn-outline-dark">View Interactive Map</a>
+          </div>
+        </div>
+    </div>
+
+    <!--put your external script links here-->
+    <script type="text/javascript" src="lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+</body></html>
